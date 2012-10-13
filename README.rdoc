@@ -7,7 +7,7 @@
 == How does it work?
 
 При подключении модуля DeviseSmsConfirmable (в вашей модели в методе devise ..., :sms_confirmable) в Devise::SessionsController добавляется специальный
-befor_filter (append_before_filter для Devise::SessionsController) который вызывает данный модуль при регистрации пользователя.
+before_filter (append_before_filter для Devise::SessionsController) который вызывает данный модуль при регистрации пользователя.
 Для опеределения нужна ли дополнительная верификация модуль использует специальный метод класса ApplicationController вашего приложения имя которого
 задается в конфигурационном файле для Devise (метод необходимо определить в классе ApplicationController): 
  
